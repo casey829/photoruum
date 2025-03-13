@@ -34,7 +34,7 @@ function Contact() {
 
               <form className="flex-1 flex flex-col gap-6">
                 <div className="flex flex-col gap-2">
-                  <label className="text-sm font-medium text-gray-700">Name & Surname</label>
+                  <label className="text-[18px] font-medium text-gray-700">Name & Surname</label>
                   <input
                     type="text"
                     placeholder="Your name here"
@@ -43,7 +43,7 @@ function Contact() {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label className="text-sm font-medium text-gray-700">Your email address</label>
+                  <label className="text-[18px] font-medium text-gray-700">Your email address</label>
                   <input
                     type="email"
                     placeholder="Your email address here"
@@ -52,7 +52,7 @@ function Contact() {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label className="text-sm font-medium text-gray-700">Phone number</label>
+                  <label className="text-[18px] font-medium text-gray-700">Phone number</label>
                   <input
                     type="tel"
                     placeholder="Phone number here"
@@ -61,7 +61,7 @@ function Contact() {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label className="text-sm font-medium text-gray-700">Shoot detail</label>
+                  <label className="text-[18px] font-medium text-gray-700">Shoot detail</label>
                   <input
                     type="text"
                     placeholder="e.g. Pre-wedding shoot, Birthday shoot, Single portrait"
@@ -84,13 +84,13 @@ function Contact() {
       </div>
 
       <div className="flex gap-3 justify-between items-center px-1 py-2">
-      <p className="text-sm w-[513px] border-2 border-[#E0E0E0] rounded-sm text-gray-700 font-normal px-3 py-1 inline-block">
+      <p className="text-[16px] w-[513px] border-2 border-[#E0E0E0] rounded-sm text-gray-700 font-normal px-3 py-1 inline-block font-kanit">
   Ntokozo Maseko • April 2024
 </p>
 
         <button 
           onClick={() => setIsOpen(true)} 
-          className="bg-gray-900 w-[513px] text-white border-none rounded-full py-2 px-4 text-sm font-medium cursor-pointer transition-colors duration-200 hover:bg-black"
+          className="bg-gray-900 w-[513px] text-white border-none rounded-full py-2 px-4 text-[16px] font-medium cursor-pointer transition-colors duration-200 hover:bg-black font-kanit"
         >
           Talk to Ntokozo Maseko
         </button>
