@@ -23,18 +23,18 @@ function Contact() {
               className="absolute top-0 right-0 h-full w-3/5 bg-white z-10 flex flex-col p-6 shadow-[-4px_0_12px_rgba(0,0,0,0.1)] md:absolute md:w-3/5 lg:fixed lg:left-3/5 lg:right-0 lg:h-screen lg:w-auto"
             >
               <div className="flex justify-between items-center mb-8">
-                <h2 className="text-lg font-medium kanit-semibold">Contact Ntokozo Maseko</h2>
+                <h2 className="text-[24px] font-kanit line-height-[100%] weight-[400] text-[#26272D]">Contact Ntokozo Maseko</h2>
                 <button 
                   onClick={() => setIsOpen(false)} 
-                  className="bg-transparent border-none cursor-pointer text-gray-500 flex items-center"
+                  className=" text-[16px]bg-transparent border-none cursor-pointer  text-[#26272D] flex items-center font-kanit"
                 >
-                  Exit <span className="ml-1">✕</span>
+                  Exit <img src="./vector.png" alt="Exit" />
                 </button>
               </div>
 
               <form className="flex-1 flex flex-col gap-6">
                 <div className="flex flex-col gap-2">
-                  <label className="text-[18px] font-medium text-gray-700">Name & Surname</label>
+                  <label className="text-[18px] font-kanit text-[#26272D]">Name & Surname</label>
                   <input
                     type="text"
                     placeholder="Your name here"
@@ -43,7 +43,7 @@ function Contact() {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label className="text-[18px] font-medium text-gray-700">Your email address</label>
+                  <label className="text-[18px] font-kanit text-[#26272D]">Your email address</label>
                   <input
                     type="email"
                     placeholder="Your email address here"
@@ -52,7 +52,7 @@ function Contact() {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label className="text-[18px] font-medium text-gray-700">Phone number</label>
+                  <label className="text-[18px] font-kanit text-[#26272D]">Phone number</label>
                   <input
                     type="tel"
                     placeholder="Phone number here"
@@ -61,7 +61,7 @@ function Contact() {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label className="text-[18px] font-medium text-gray-700">Shoot detail</label>
+                  <label className="text-[18px] font-kanit text-[#26272D]">Shoot detail</label>
                   <input
                     type="text"
                     placeholder="e.g. Pre-wedding shoot, Birthday shoot, Single portrait"
