@@ -1,19 +1,18 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
- function Contact() {
+function Contact() {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen w-full p-6">
-      <div className="relative w-full max-w-xl">
-        <img 
-          src="./image.jpeg" 
-          alt="Ntokozo Maseko" 
-          className="w-full h-auto rounded-lg shadow-md"
+    <div className="w-[513px] h-[734px] object-center mx-auto p-5 relative">
+      <div className="relative w-full rounded-xl overflow-hidden mb-3 shadow-md">
+        <img
+          src="./image.jpeg"
+          alt="Ntokozo Maseko"
+          className="w-full h-auto  object-cover aspect-auto"
         />
-        
-        {/*This is the  form that hovers over half the image and extends to the edge of the screen*/}
+
         <AnimatePresence>
           {isOpen && (
             <motion.div
@@ -21,63 +20,59 @@ import { motion, AnimatePresence } from "framer-motion";
               animate={{ x: "0%" }}
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.3 }}
-              className="fixed top-0 bottom-0 right-0 bg-white shadow-lg overflow-y-auto"
-              style={{
-                left: "50%", 
-                width: "calc(100% - 50%)", 
-                maxWidth: "calc(100vw - 50%)" 
-              }}
+              className="absolute top-0 right-0 h-full w-3/5 bg-white z-10 flex flex-col p-6 shadow-[-4px_0_12px_rgba(0,0,0,0.1)] md:absolute md:w-3/5 lg:fixed lg:left-3/5 lg:right-0 lg:h-screen lg:w-auto"
             >
-              <div className="flex justify-between items-center p-6 pb-3">
-                <h2 className="text-lg font-bold">Contact Ntokozo Maseko</h2>
+              <div className="flex justify-between items-center mb-8">
+                <h2 className="text-lg font-medium kanit-semibold">Contact Ntokozo Maseko</h2>
                 <button 
-                  onClick={() => setIsOpen(false)}
-                  className="text-black"
+                  onClick={() => setIsOpen(false)} 
+                  className="bg-transparent border-none cursor-pointer text-gray-500 flex items-center"
                 >
-                 Exit ✕
+                  Exit <span className="ml-1">✕</span>
                 </button>
               </div>
-              
-              <form className="p-6 pt-0 space-y-3">
-                <div>
-                  <label className="block text-sm mb-1">Name & Surname</label>
-                  <input 
-                    type="text" 
-                    placeholder="Your name here" 
-                    className="w-full p-2 border border-gray-300 rounded text-sm"
+
+              <form className="flex-1 flex flex-col gap-6">
+                <div className="flex flex-col gap-2">
+                  <label className="text-sm font-medium text-gray-700">Name & Surname</label>
+                  <input
+                    type="text"
+                    placeholder="Your name here"
+                    className="w-full py-2 px-0 border-t-0 border-l-0 border-r-0 border-b border-gray-300 text-sm focus:outline-none focus:border-gray-500 focus:ring-0"
                   />
                 </div>
-                
-                <div>
-                  <label className="block text-sm mb-1">Your email address</label>
-                  <input 
-                    type="email" 
-                    placeholder="Your email address here" 
-                    className="w-full p-2 border border-gray-300 rounded text-sm"
+
+                <div className="flex flex-col gap-2">
+                  <label className="text-sm font-medium text-gray-700">Your email address</label>
+                  <input
+                    type="email"
+                    placeholder="Your email address here"
+                    className="w-full py-2 px-0 border-t-0 border-l-0 border-r-0 border-b border-gray-300 text-sm focus:outline-none focus:border-gray-500 focus:ring-0"
                   />
                 </div>
-                
-                <div>
-                  <label className="block text-sm mb-1">Phone number</label>
-                  <input 
-                    type="tel" 
-                    placeholder="Phone number here" 
-                    className="w-full p-2 border border-gray-300 rounded text-sm"
+
+                <div className="flex flex-col gap-2">
+                  <label className="text-sm font-medium text-gray-700">Phone number</label>
+                  <input
+                    type="tel"
+                    placeholder="Phone number here"
+                    className="w-full py-2 px-0 border-t-0 border-l-0 border-r-0 border-b border-gray-300 text-sm focus:outline-none focus:border-gray-500 focus:ring-0"
                   />
                 </div>
-                
-                <div>
-                  <label className="block text-sm mb-1">Shoot detail</label>
-                  <textarea 
-                    placeholder="e.g. Pre-wedding shoot, Birthday shoot, Single portrait" 
-                    className="w-full p-2 border border-gray-300 rounded text-sm h-20"
-                  ></textarea>
+
+                <div className="flex flex-col gap-2">
+                  <label className="text-sm font-medium text-gray-700">Shoot detail</label>
+                  <input
+                    type="text"
+                    placeholder="e.g. Pre-wedding shoot, Birthday shoot, Single portrait"
+                    className="w-full py-2 px-0 border-t-0 border-l-0 border-r-0 border-b border-gray-300 text-sm focus:outline-none focus:border-gray-500 focus:ring-0"
+                  />
                 </div>
-                
-                <div className="pt-2">
+
+                <div className="flex justify-center mt-auto">
                   <button 
                     type="submit" 
-                    className="w-full bg-black text-white py-2 px-4 rounded-full text-sm"
+                    className="bg-gray-900 text-white border-none rounded-full py-2 px-6 text-sm font-medium cursor-pointer transition-colors duration-200 hover:bg-black mt-8"
                   >
                     Submit request
                   </button>
@@ -87,13 +82,15 @@ import { motion, AnimatePresence } from "framer-motion";
           )}
         </AnimatePresence>
       </div>
-      
-      {/* Caption and Button */}
-      <div className="flex justify-between items-center w-full max-w-xl mt-4">
-        <p className="text-sm">Ntokozo Maseko • April 2024</p>
-        <button
-          onClick={() => setIsOpen(true)}
-          className="px-4 py-2 bg-black text-white rounded-full text-sm"
+
+      <div className="flex gap-3 justify-between items-center px-1 py-2">
+      <p className="text-sm w-[513px] border-2 border-[#E0E0E0] rounded-sm text-gray-700 font-normal px-3 py-1 inline-block">
+  Ntokozo Maseko • April 2024
+</p>
+
+        <button 
+          onClick={() => setIsOpen(true)} 
+          className="bg-gray-900 w-[513px] text-white border-none rounded-full py-2 px-4 text-sm font-medium cursor-pointer transition-colors duration-200 hover:bg-black"
         >
           Talk to Ntokozo Maseko
         </button>
@@ -101,6 +98,5 @@ import { motion, AnimatePresence } from "framer-motion";
     </div>
   );
 }
-
 
 export default Contact;
