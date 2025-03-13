@@ -34,7 +34,7 @@ import { motion, AnimatePresence } from "framer-motion";
                   onClick={() => setIsOpen(false)}
                   className="text-black"
                 >
-                  ✕
+                 Exit ✕
                 </button>
               </div>
               
@@ -43,7 +43,7 @@ import { motion, AnimatePresence } from "framer-motion";
                   <label className="block text-sm mb-1">Name & Surname</label>
                   <input 
                     type="text" 
-                    placeholder="Enter your name" 
+                    placeholder="Your name here" 
                     className="w-full p-2 border border-gray-300 rounded text-sm"
                   />
                 </div>
@@ -52,7 +52,7 @@ import { motion, AnimatePresence } from "framer-motion";
                   <label className="block text-sm mb-1">Your email address</label>
                   <input 
                     type="email" 
-                    placeholder="Enter your email" 
+                    placeholder="Your email address here" 
                     className="w-full p-2 border border-gray-300 rounded text-sm"
                   />
                 </div>
@@ -61,15 +61,15 @@ import { motion, AnimatePresence } from "framer-motion";
                   <label className="block text-sm mb-1">Phone number</label>
                   <input 
                     type="tel" 
-                    placeholder="Enter your phone number" 
+                    placeholder="Phone number here" 
                     className="w-full p-2 border border-gray-300 rounded text-sm"
                   />
                 </div>
                 
                 <div>
-                  <label className="block text-sm mb-1">About about</label>
+                  <label className="block text-sm mb-1">Shoot detail</label>
                   <textarea 
-                    placeholder="e.g. I'm wanting to hire Christie Jones, to style and cut..." 
+                    placeholder="e.g. Pre-wedding shoot, Birthday shoot, Single portrait" 
                     className="w-full p-2 border border-gray-300 rounded text-sm h-20"
                   ></textarea>
                 </div>
@@ -95,7 +95,7 @@ import { motion, AnimatePresence } from "framer-motion";
           onClick={() => setIsOpen(true)}
           className="px-4 py-2 bg-black text-white rounded-full text-sm"
         >
-          Contact
+          Talk to Ntokozo Maseko
         </button>
       </div>
     </div>
