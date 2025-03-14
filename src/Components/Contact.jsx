@@ -8,6 +8,7 @@ function Contact() {
     <div className="max-w-[513px] w-[512px]  lg:top-[30px]  mx-auto p-4   lg:min-h-screen relative">
       <div className="relative w-full items-center rounded-xl overflow-hidden mb-3 shadow-md">
         <img
+         loading="lazy"
           src="./image.jpeg"
           alt="Ntokozo Maseko"
           className="w-[500px] h-[580px] max-h-[540px]  aspect-auto"
