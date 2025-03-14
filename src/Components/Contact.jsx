@@ -10,7 +10,7 @@ function Contact() {
         <img
           src="./image.jpeg"
           alt="Ntokozo Maseko"
-          className="w-[512px] h-[652px] max-h-[540px] object-cover aspect-auto"
+          className="w-[500px] h-[580px] max-h-[540px]  aspect-auto"
         />
         <AnimatePresence>
           {isOpen && (
