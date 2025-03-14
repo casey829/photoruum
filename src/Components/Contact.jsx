@@ -49,6 +49,7 @@ function Contact() {
                     Name & Surname
                   </label>
                   <input
+                    required
                     type="text"
                     placeholder="Your name here"
                     className="w-full py-2 px-0 border-t-0 border-l-0 border-r-0 border-b border-[#E0E0E0] text-sm focus:outline-none focus:border-gray-500 focus:ring-0"
@@ -60,6 +61,7 @@ function Contact() {
                     Your email address
                   </label>
                   <input
+                    required
                     type="email"
                     placeholder="Your email address here"
                     className="w-full py-2 px-0 border-t-0 border-l-0 border-r-0 border-b border-gray-300 text-sm focus:outline-none focus:border-gray-500 focus:ring-0"
@@ -71,7 +73,8 @@ function Contact() {
                     Phone number
                   </label>
                   <input
-                    type="tel"
+                    required
+                    type="number"
                     placeholder="Phone number here"
                     className="w-full py-2 px-0 border-t-0 border-l-0 border-r-0 border-b border-gray-300 text-sm focus:outline-none focus:border-gray-500 focus:ring-0"
                   />
@@ -82,6 +85,7 @@ function Contact() {
                     Shoot detail
                   </label>
                   <input
+                    required
                     type="text"
                     placeholder="e.g. Pre-wedding shoot, Birthday shoot, Single portrait"
                     className="w-full  md:py-7 px-0 border-t-0 border-l-0 border-r-0 border-b border-gray-300 text-sm focus:outline-none focus:border-gray-500 focus:ring-0"
