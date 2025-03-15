@@ -1,9 +1,13 @@
 @import "tailwindcss";
 
-html,
+/* html,
 body {
   overflow: hidden;
   height: 100%;
+} */
+
+*{
+  font-family: 'Kanit', sans-serif;
 }
 
 .kanit-thin {
