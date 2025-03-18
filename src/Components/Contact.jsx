@@ -171,7 +171,7 @@ function Contact() {
       <AnimatePresence>
         {isOpen && (
           <>
-            {/* Overlay - Closes modal when clicked */}
+            
             <motion.div
               className="fixed inset-0 bg-auto bg-opacity-30 backdrop-contrast-50 z-5"
               initial={{ opacity: 0 }}
@@ -189,7 +189,7 @@ function Contact() {
               className="fixed top-0 right-0 h-full md:w-[45%] sm:w-3/4  bg-white z-10 flex flex-col p-0 shadow-[-4px_0_12px_rgba(0,0,0,0.1)] md:max-w-[690px]"
             >
               {/* Modal Header */}
-              <div className="flex justify-between py-6 md:py-9 px-4 md:px-8 items-center border-b-[1px] border-[#E0E0E0] w-full">
+              <div className="flex justify-between py-6 md:py-9 px-2 md:px-6 items-center border-b-[1px] border-[#E0E0E0] w-full">
                 <h2 className="text-xl md:text-[24px] lg:text-[32px] p-2 kanit-regular text-[#26272D] font-normal">
                   Contact Ntokozo Maseko
                 </h2>
@@ -211,7 +211,7 @@ function Contact() {
               </div>
 
               {/* Modal Form */}
-              <form className="overflow-y-auto flex-1 flex p-4 md:p-6 flex-col gap-6 w-full h-full">
+              <form className="overflow-y-auto  py-6 md:py-9  md:px-8 flex-1 flex p-4 flex-col gap-6 w-full h-full">
                 <div className="flex flex-col gap-2">
                   <label className="text-base md:text-[18px] font-kanit text-[#26272D] leading-5 font-normal">
                     Name & Surname
