@@ -186,7 +186,7 @@ function Contact() {
               animate={{ x: "0%" }}
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.3 }}
-              className="fixed top-0 right-0 h-full w-full sm:w-3/4 md:w-1/2 bg-white z-10 flex flex-col p-0 shadow-[-4px_0_12px_rgba(0,0,0,0.1)] md:max-w-[690px]"
+              className="fixed top-0 right-0 h-full w-[45%] sm:w-3/4 md:w-1/2 bg-white z-10 flex flex-col p-0 shadow-[-4px_0_12px_rgba(0,0,0,0.1)] md:max-w-[690px]"
             >
               {/* Modal Header */}
               <div className="flex justify-between py-6 md:py-9 px-4 md:px-8 items-center border-b-[1px] border-[#E0E0E0] w-full">
